@@ -7,8 +7,9 @@ A simple app for made for Android, that allows users to track their water intake
 - The user can set a goal amount of water, and see their progress to completing the goal
 - User can input a custom amount, or use one of the pre-made 'quick add' buttons
 
-## Screenshots
+## Screenshot
 
+![[screenshot.png]]
 
 ## Installation
 
