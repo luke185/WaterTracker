@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/waterPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_0"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trackerText" />
+
+    <Button
+        android:id="@+id/addWaterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/add_water"
+        app:layout_constraintEnd_toEndOf="@+id/waterInput"
+        app:layout_constraintStart_toStartOf="@+id/waterInput"
+        app:layout_constraintTop_toBottomOf="@+id/waterInput" />
+
+    <EditText
+        android:id="@+id/waterInput"
+        android:layout_width="123dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/ml"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+    <TextView
+        android:id="@+id/percentageSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/percentageSign"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@+id/waterPercentage"
+        app:layout_constraintTop_toTopOf="@+id/waterPercentage" />
+
+    <Button
+        android:id="@+id/addButton250"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_250_ml"
+        app:layout_constraintEnd_toEndOf="@+id/addButton100"
+        app:layout_constraintStart_toStartOf="@+id/addButton100"
+        app:layout_constraintTop_toBottomOf="@+id/addButton100" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95" />
+
+    <Button
+        android:id="@+id/updateGoalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/update_goal"
+        app:layout_constraintEnd_toEndOf="@+id/addWaterButton"
+        app:layout_constraintStart_toStartOf="@+id/addWaterButton"
+        app:layout_constraintTop_toBottomOf="@+id/addWaterButton" />
+
+    <Button
+        android:id="@+id/addButton500"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_500_ml"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/divider"
+        app:layout_constraintTop_toBottomOf="@+id/updateGoalButton" />
+
+    <TextView
+        android:id="@+id/trackerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="100mL / 1000mL, 900mL left" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:progress="0"
+        android:progressTint="#2298F6"
+        android:scaleX="6"
+        android:scaleY="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/waterPercentage" />
+
+
+    <Button
+        android:id="@+id/addButton100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+ 100 mL"
+        app:layout_constraintEnd_toEndOf="@+id/addButton50"
+        app:layout_constraintStart_toStartOf="@+id/addButton50"
+        app:layout_constraintTop_toBottomOf="@+id/addButton50" />
+
+    <Button
+        android:id="@+id/addButton600"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+ 600 mL"
+        app:layout_constraintEnd_toEndOf="@+id/addButton500"
+        app:layout_constraintStart_toStartOf="@+id/addButton500"
+        app:layout_constraintTop_toBottomOf="@+id/addButton500" />
+
+    <Button
+        android:id="@+id/addButton1000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+ 1000 mL"
+        app:layout_constraintEnd_toEndOf="@+id/addButton600"
+        app:layout_constraintStart_toStartOf="@+id/addButton600"
+        app:layout_constraintTop_toBottomOf="@+id/addButton600" />
+
+    <Button
+        android:id="@+id/addButton50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+ 50 mL"
+        app:layout_constraintEnd_toStartOf="@+id/divider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateGoalButton" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="1dp"
+        android:layout_height="844dp"
+        android:background="?android:attr/listDivider"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

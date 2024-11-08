@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">WaterTracker</string>
+    <string name="percentageSign">%</string>
+    <string name="ml">mL</string>
+    <string name="input_new_goal_amount">Input new goal amount</string>
+    <string name="update_goal">Update Goal</string>
+    <string name="back">back</string>
+    <string name="_0">0</string>
+    <string name="_500_ml">+ 500 mL</string>
+    <string name="_250_ml">+ 250 mL</string>
+    <string name="add_water">Add Water</string>
+    <string name="reset">Reset</string>
+    <string name="settings">Settings</string>
+</resources>
