@@ -9,7 +9,7 @@ A simple app for made for Android, that allows users to track their water intake
 
 ## Screenshot
 
-![[screenshot.png]]
+![screenshot of app](https://github.com/luke185/WaterTracker/blob/master/screenshot.png?raw=true)
 
 ## Installation
 
